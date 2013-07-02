@@ -1,1 +1,1 @@
-SELECT user_name FROM group_users WHERE period_id = 24 INTO OUTFILE '/tmp/users.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
+SELECT user_id FROM group_users WHERE period_id = 24 INTO OUTFILE '/tmp/users.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
