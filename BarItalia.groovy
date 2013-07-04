@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-String fileName = "source/DummyCambioconcursoGrupos.txt"
+String fileName = "source/GruposAcu07032013.txt"
 File rankingsFile = new File(fileName)
 List<String> fileLines = rankingsFile ? rankingsFile.readLines() : []
 File destiny = new File("inserts_dummy.sql")

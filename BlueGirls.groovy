@@ -17,7 +17,7 @@ new File("source/users.csv").eachLine { line ->
             "Identificador7"
     ]
 
-    String date = "2013-07-02 00:00:00"
+    String date = "2013-07-03 00:00:00"
 
     String account = line.replaceAll('"', '')
 
