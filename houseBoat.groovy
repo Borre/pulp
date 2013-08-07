@@ -30,7 +30,7 @@ println("Total independent accounts: " + groupedCommandObjects.size())
 
 lineList.removeAll()
 
-String queryHead = "INSERT INTO ranking (autos, bancos, date_created, hoteles, lineas_aereas, num_socio, otros, tiendas) VALUES "
+String queryHead = "INSERT INTO acumulacion (autos, bancos, date_created, hoteles, lineas_aereas, num_socio, otros, tiendas) VALUES "
 
 count = 0
 
@@ -74,7 +74,7 @@ class Accumulation {
     String others = null
     String stores = null
 
-    String currentDate = (new Date() - 1).clearTime().format("yyyy-MM").toString() + "-01 00:00:00"
+    String currentDate = "2013-06-01 00:00:00"
 
     String toString() {
         return "($cars, $banks, '$currentDate', $hotels, $airlines, $accountNumber, $others, $stores)"
