@@ -1,6 +1,5 @@
-#!/usr/bin/env groovy
 Integer args = this.args.size() > 0 ? this.args[0] : 0
-Date initialDate = new Date().parse("yyyy-M-d H:m:s", "2013-07-02 00:00:00")
+Date initialDate = new Date().parse("yyyy-M-d H:m:s", "2014-01-02 00:00:00")
 String insertHead = "INSERT INTO groups_rankings_users (user_id, kmps, transaction, identifier, version) VALUES "
 String currentLocation = new File(".").getAbsolutePath().toString()[0..-2] + "processedFiles/"
 println('Creating directory for output: ')

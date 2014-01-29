@@ -1,6 +1,6 @@
 Map verticals = ["A":"cars", "B":"banks", "H":"hotels", "L": "airlines", "O":"others", "T":"stores"]
 
-File file = new File("source/GraphValues__Accum-Vertical.csv")
+File file = new File("source/Acum_x_Vertical_x_socio_Julio2013.csv")
 
 List<String> lines = file.readLines()
 
@@ -74,7 +74,7 @@ class Accumulation {
     String others = null
     String stores = null
 
-    String currentDate = "2013-06-01 00:00:00"
+    String currentDate = "2013-07-01 00:00:00"
 
     String toString() {
         return "($cars, $banks, '$currentDate', $hotels, $airlines, $accountNumber, $others, $stores)"

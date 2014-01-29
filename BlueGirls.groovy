@@ -5,7 +5,7 @@ Integer counter = 0
 
 println("Dummy starts")
 
-new File("source/users.csv").eachLine { line ->
+new File("source/users_today.csv").eachLine { line ->
 
     List<String> contests = [
             "Identificador1",
@@ -17,7 +17,7 @@ new File("source/users.csv").eachLine { line ->
             "Identificador7"
     ]
 
-    String date = "2013-07-03 00:00:00"
+    String date = "2013-09-27 00:00:00"
 
     String account = line.replaceAll('"', '')
 

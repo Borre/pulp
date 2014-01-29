@@ -1,8 +1,8 @@
-#!/usr/bin/env groovy
 List<String> filesToRead = 	[
-        "Emails_Jul11_1.csv",
-        "Emails_Jul11_2.csv",
-        "Emails_Jul11_3.csv"
+        "Emails_Oct1_1.csv",
+        "Emails_Oct1_2.csv",
+        "Emails_Oct1_3.csv",
+        "Emails_Oct1_4.csv"
 ]
 List<Users> target = []
 filesToRead.each { fileName ->
