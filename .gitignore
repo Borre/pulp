@@ -1,2 +1,4 @@
 /processedFiles
 /source
+*.iml
+.idea/

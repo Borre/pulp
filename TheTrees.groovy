@@ -9,7 +9,7 @@
 import groovy.sql.Sql
 import groovy.xml.XmlUtil
 
-Integer period = 25
+Integer period = 26
 
 List<Groups> groupsList = []
 List<Users> usersList = []
@@ -59,11 +59,9 @@ contests.each { contest ->
     println(contest + " division 3")
     printHeads()
     groupsKmps.findAll { it.divisionId == 3 }.sort { -it.kmps }.each { groupFinal ->
-        if (groupFinal.groupName != "yurandy") {
-            counter++
-            String groupName = XmlUtil.escapeXml(groupFinal.groupName)
-            println("<tr><td>$counter</td><td>$groupName</td></tr>")
-        }
+        counter++
+        String groupName = XmlUtil.escapeXml(groupFinal.groupName)
+        println("<tr><td>$counter</td><td>$groupName</td></tr>")
     }
     printFoot()
 }
@@ -96,3 +94,4 @@ class Rankings {
     Integer kmps
     String identifier
 }
+
